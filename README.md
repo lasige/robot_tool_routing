@@ -57,14 +57,15 @@ See [how the routing algorithms work](Routing/README.md) for implementation
 details and configuration, and [the tool catalog schema](Tools/README.md) to
 add or edit tools.
 
-## Record, analyse, and plot results
+## Record benchmark results
 
-`bench.py` records selected tools, optional expected labels, and per-prompt
-timings to CSV. It does not calculate quality scores or create plots.
+`bench.py` runs the selected routers over the prompt datasets and produces CSV
+files in `output/<timestamp>/<router>/<type>/run_<NN>.csv`, one file per router,
+prompt type, and run. Each CSV contains experiment metadata, selected tools,
+optional expected labels, per-prompt timings, and any routing errors.
 
 ```bash
 python3 bench.py CDBv3 LLM --prompt-dir prompts/ --config config.ollama-lan.example.json
-python3 analyser.py output/<timestamp>/ --output analysis/analysis.json
 ```
 
 The labeled datasets are in [prompts/](prompts/):
@@ -75,19 +76,26 @@ The labeled datasets are in [prompts/](prompts/):
 Run one file with
 `--prompts prompts/type_i.json`, or all three with `--prompt-dir prompts/`.
 
-The analyser prints quality and timing summaries and saves data for plotting.
+## Analyse benchmark results
+
+`analyser.py` reads the CSV files produced by `bench.py`, prints quality and
+timing summaries, and saves the analysis as JSON for plotting. Replace
+`<timestamp>` with the benchmark output directory you want to analyse.
+
+```bash
+python3 analyser.py output/<timestamp>/ --output analysis/analysis.json
+```
+
+## Plot analysis results
+
 To generate the paper figures, install the optional plotting dependencies:
 
 ```bash
 python3 -m pip install -r requirements-plots.txt
-python3 plotter.py analysis/analysis.json --output-dir plots/ --timing-scale log
+python3 plotter.py analysis/analysis.json --output-dir plots/
 ```
 
-`--timing-scale log` uses the paper's logarithmic latency axis and is the default.
-Use `--timing-scale linear` for a linear axis.
-
-Paper plots use Types i, ii, and iii. See the
-[benchmark and analysis details](Routing/README.md#optional-benchmark) for the
+See the [benchmark and analysis details](README-bench.md) for the
 input format, metrics, and plotting options.
 
 ## Citation
