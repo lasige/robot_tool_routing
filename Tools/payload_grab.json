@@ -1,0 +1,12 @@
+{
+  "summary": "control robot gripper, open gripper, close gripper, grab object, release object, end effector",
+  "description": "Commands a robot gripper or simple end effector. Command format: 'payload_grab <open|close|stop>' where open releases, close grasps, and stop halts gripper motion. Output reports command accepted, position, force, object detected, or failure. Report the final gripper state and any safety warning.",
+  "keywords": [
+    "gripper",
+    "grab",
+    "grasp",
+    "pick",
+    "close gripper",
+    "open gripper"
+  ]
+}

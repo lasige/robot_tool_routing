@@ -1,0 +1,13 @@
+{
+  "summary": "plan a path or route for the mobile robot to a target map pose, navigation goal, waypoint, x y yaw",
+  "description": "Computes a navigation path to a target pose without necessarily executing it. Command format: 'path_plan <x> <y> <yaw_deg>' where x and y are map coordinates in metres and yaw_deg is the desired final heading in degrees. Output reports whether a path was found, estimated length, waypoint count, and major warnings. Report success, path length, and failure reasons.",
+  "keywords": [
+    "plan path",
+    "path",
+    "new path",
+    "route blocked",
+    "route",
+    "navigation goal",
+    "waypoint"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "summary": "check robot diagnostics, system health, ROS diagnostics, warnings, errors, node status, hardware faults",
+  "description": "Reports aggregated robot diagnostics from software and hardware components. Output may include diagnostic level, component name, message, and key-value details, for example 'WARN motor_controller: high current' or 'OK lidar: publishing'. Does not accept parameters.",
+  "keywords": [
+    "diagnostic",
+    "diagnostics",
+    "fault",
+    "error",
+    "warning",
+    "system health"
+  ]
+}

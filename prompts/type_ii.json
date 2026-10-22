@@ -1,0 +1,359 @@
+[
+  {
+    "prompt": "monitor the battery and land when it drops below 25%",
+    "expected_tools": [
+      "battery",
+      "land"
+    ]
+  },
+  {
+    "prompt": "check the wind and move to 0 0 5 if it exceeds 20m/s",
+    "expected_tools": [
+      "wind_speed",
+      "move"
+    ]
+  },
+  {
+    "prompt": "check the current altitude and return to base if it is above 100m",
+    "expected_tools": [
+      "whereami",
+      "rtl"
+    ]
+  },
+  {
+    "prompt": "check the battery and dock the robot if it is below 15%",
+    "expected_tools": [
+      "battery",
+      "dock"
+    ]
+  },
+  {
+    "prompt": "check the battery and return to base if it is below 30%",
+    "expected_tools": [
+      "battery",
+      "rtl"
+    ]
+  },
+  {
+    "prompt": "check the battery and announce a warning if it is below 20%",
+    "expected_tools": [
+      "battery"
+    ]
+  },
+  {
+    "prompt": "check the wind and land if it exceeds 18m/s",
+    "expected_tools": [
+      "wind_speed",
+      "land"
+    ]
+  },
+  {
+    "prompt": "check the wind and return to base if it exceeds 15m/s",
+    "expected_tools": [
+      "wind_speed",
+      "rtl"
+    ]
+  },
+  {
+    "prompt": "check the GPS status and stop if the signal is lost",
+    "expected_tools": [
+      "whereami",
+      "stop"
+    ]
+  },
+  {
+    "prompt": "check the GPS status and localize the robot if the fix is invalid",
+    "expected_tools": [
+      "whereami",
+      "localize"
+    ]
+  },
+  {
+    "prompt": "check the bumper sensors and stop if one is pressed",
+    "expected_tools": [
+      "bumper_status",
+      "stop"
+    ]
+  },
+  {
+    "prompt": "check the bumper sensors and reverse to -1 0 0 if one is pressed",
+    "expected_tools": [
+      "bumper_status",
+      "move"
+    ]
+  },
+  {
+    "prompt": "run diagnostics and stop the robot if a critical fault is found",
+    "expected_tools": [
+      "diagnostics",
+      "stop"
+    ]
+  },
+  {
+    "prompt": "run diagnostics and record a rosbag if a fault is detected",
+    "expected_tools": [
+      "diagnostics",
+      "rosbag_record"
+    ]
+  },
+  {
+    "prompt": "check the IMU status and land if it becomes unstable",
+    "expected_tools": [
+      "imu_status",
+      "land"
+    ]
+  },
+  {
+    "prompt": "check the IMU status and stop if excessive vibration is detected",
+    "expected_tools": [
+      "imu_status",
+      "stop"
+    ]
+  },
+  {
+    "prompt": "check the motor current and stop if it exceeds the safe limit",
+    "expected_tools": [
+      "motor_current",
+      "stop"
+    ]
+  },
+  {
+    "prompt": "check the motor current and run diagnostics if it is abnormally high",
+    "expected_tools": [
+      "motor_current",
+      "diagnostics"
+    ]
+  },
+  {
+    "prompt": "check the system temperature and stop if it overheats",
+    "expected_tools": [
+      "temperature_monitor",
+      "stop"
+    ]
+  },
+  {
+    "prompt": "check the system temperature and announce a warning if it exceeds 80 degrees",
+    "expected_tools": [
+      "temperature_monitor"
+    ]
+  },
+  {
+    "prompt": "check the network status and return to base if communication is lost",
+    "expected_tools": [
+      "network_status",
+      "rtl"
+    ]
+  },
+  {
+    "prompt": "check the network status and record a rosbag if packet loss is excessive",
+    "expected_tools": [
+      "network_status",
+      "rosbag_record"
+    ]
+  },
+  {
+    "prompt": "check for obstacles and stop if one is too close",
+    "expected_tools": [
+      "obstacle_monitor",
+      "stop"
+    ]
+  },
+  {
+    "prompt": "check for obstacles and plan a new path if the route is blocked",
+    "expected_tools": [
+      "obstacle_monitor",
+      "path_plan"
+    ]
+  },
+  {
+    "prompt": "perform a lidar scan and stop if an obstacle is detected ahead",
+    "expected_tools": [
+      "lidar_scan",
+      "stop"
+    ]
+  },
+  {
+    "prompt": "perform a lidar scan and filter the point cloud if the scan is noisy",
+    "expected_tools": [
+      "lidar_scan",
+      "pointcloud_filter"
+    ]
+  },
+  {
+    "prompt": "detect objects and follow the target if a person is found",
+    "expected_tools": [
+      "object_detect",
+      "follow_target"
+    ]
+  },
+  {
+    "prompt": "detect objects and take a camera snapshot if an unknown object is found",
+    "expected_tools": [
+      "object_detect",
+      "camera_snapshot"
+    ]
+  },
+  {
+    "prompt": "detect objects and announce a warning if a person enters the restricted area",
+    "expected_tools": [
+      "object_detect"
+    ]
+  },
+  {
+    "prompt": "check the costmap and plan a path if the destination is reachable",
+    "expected_tools": [
+      "costmap_check",
+      "path_plan"
+    ]
+  },
+  {
+    "prompt": "check the costmap and stop if the robot is inside an occupied cell",
+    "expected_tools": [
+      "costmap_check",
+      "stop"
+    ]
+  },
+  {
+    "prompt": "check the SLAM status and save the map if mapping is complete",
+    "expected_tools": [
+      "slam_status",
+      "map_save"
+    ]
+  },
+  {
+    "prompt": "check the SLAM status and localize the robot if tracking is lost",
+    "expected_tools": [
+      "slam_status",
+      "localize"
+    ]
+  },
+  {
+    "prompt": "check the odometry and stop if the robot is not moving as commanded",
+    "expected_tools": [
+      "odometry",
+      "stop"
+    ]
+  },
+  {
+    "prompt": "check the odometry and rotate 90 degrees when the robot reaches the waypoint",
+    "expected_tools": [
+      "odometry",
+      "rotate"
+    ]
+  },
+  {
+    "prompt": "check the wheel speeds and announce a warning if they differ excessively",
+    "expected_tools": [
+      "odometry"
+    ]
+  },
+  {
+    "prompt": "check the wheel speeds and run diagnostics if one wheel is not moving",
+    "expected_tools": [
+      "odometry",
+      "diagnostics"
+    ]
+  },
+  {
+    "prompt": "check the current velocity and stop if it exceeds 2m/s",
+    "expected_tools": [
+      "velocity",
+      "stop"
+    ]
+  },
+  {
+    "prompt": "check the current velocity and announce a warning if the robot is moving too fast",
+    "expected_tools": [
+      "velocity"
+    ]
+  },
+  {
+    "prompt": "check the current position and release the payload if the drone is at the delivery point",
+    "expected_tools": [
+      "whereami",
+      "payload_release"
+    ]
+  },
+  {
+    "prompt": "check the current position and begin waypoint patrol if the robot is at the starting point",
+    "expected_tools": [
+      "whereami",
+      "waypoint_patrol"
+    ]
+  },
+  {
+    "prompt": "check the camera stream and stop if a person is blocking the path",
+    "expected_tools": [
+      "camera_stream",
+      "stop"
+    ]
+  },
+  {
+    "prompt": "take a camera snapshot and announce what is visible",
+    "expected_tools": [
+      "camera_snapshot"
+    ]
+  },
+  {
+    "prompt": "load the map and localize the robot within it",
+    "expected_tools": [
+      "map_load",
+      "localize"
+    ]
+  },
+  {
+    "prompt": "check the transform from map to base_link and localize the robot if it is unavailable",
+    "expected_tools": [
+      "tf_lookup",
+      "localize"
+    ]
+  },
+  {
+    "prompt": "dock the robot to charge and undock it when ready to deploy",
+    "expected_tools": [
+      "dock",
+      "undock"
+    ]
+  },
+  {
+    "prompt": "follow the line and stop when the line ends",
+    "expected_tools": [
+      "line_follow",
+      "stop"
+    ]
+  },
+  {
+    "prompt": "explore the frontier and save the map when exploration is complete",
+    "expected_tools": [
+      "frontier_explore",
+      "map_save"
+    ]
+  },
+  {
+    "prompt": "start waypoint patrol and return to base when the patrol is complete",
+    "expected_tools": [
+      "waypoint_patrol",
+      "rtl"
+    ]
+  },
+  {
+    "prompt": "set the geofence and take off after it is configured",
+    "expected_tools": [
+      "geofence_set",
+      "takeoff"
+    ]
+  },
+  {
+    "prompt": "turn the warning LED on when diagnostics report a fault",
+    "expected_tools": [
+      "diagnostics",
+      "led_control"
+    ]
+  },
+  {
+    "prompt": "announce the obstacle and stop the robot",
+    "expected_tools": [
+      "stop"
+    ]
+  }
+]

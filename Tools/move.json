@@ -1,0 +1,13 @@
+{
+  "summary": "move or fly the drone to a target position; navigate to coordinates (x, y, z in metres), relocate, or reposition the drone in space",
+  "description": "Moves the drone to a target 3D position. Command format: 'move <x> <y> <z>' where x (forward/back), y (left/right), z (altitude) are floats in metres. Output confirms the movement target and reports when the drone reaches the position. Report when movement starts, completes, or if an error occurs. Example: 'move 2.0 0.0 1.5'.",
+  "keywords": [
+    "move",
+    "reverse",
+    "coordinates",
+    "go to",
+    "descend to",
+    "reposition",
+    "relocate"
+  ]
+}

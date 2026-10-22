@@ -1,0 +1,536 @@
+[
+  {
+    "prompt": "if the battery is below 20% and wind exceeds 10m/s, land",
+    "expected_tools": [
+      "battery",
+      "wind_speed",
+      "land"
+    ]
+  },
+  {
+    "prompt": "if the battery is below 30% or wind is above 15m/s, return to base",
+    "expected_tools": [
+      "battery",
+      "wind_speed",
+      "rtl"
+    ]
+  },
+  {
+    "prompt": "if the battery is below 20% and altitude is above 50m, return to base",
+    "expected_tools": [
+      "battery",
+      "whereami",
+      "rtl"
+    ]
+  },
+  {
+    "prompt": "monitor the battery, when it drops below 20% land and return to base",
+    "expected_tools": [
+      "battery",
+      "land",
+      "rtl"
+    ]
+  },
+  {
+    "prompt": "if wind exceeds 15m/s return to base and tell me the position",
+    "expected_tools": [
+      "wind_speed",
+      "rtl",
+      "whereami"
+    ]
+  },
+  {
+    "prompt": "when the battery drops below 30% move to 0 0 0 and land",
+    "expected_tools": [
+      "battery",
+      "move",
+      "land"
+    ]
+  },
+  {
+    "prompt": "if the battery is below 15%, announce a warning and dock the robot",
+    "expected_tools": [
+      "battery",
+      "dock"
+    ]
+  },
+  {
+    "prompt": "if the battery is below 25%, save the current map and return to base",
+    "expected_tools": [
+      "battery",
+      "map_save",
+      "rtl"
+    ]
+  },
+  {
+    "prompt": "if the battery becomes critical, stop the robot and turn on the warning LED",
+    "expected_tools": [
+      "battery",
+      "stop",
+      "led_control"
+    ]
+  },
+  {
+    "prompt": "if the battery drops below 20%, record a rosbag and land",
+    "expected_tools": [
+      "battery",
+      "rosbag_record",
+      "land"
+    ]
+  },
+  {
+    "prompt": "if the wind exceeds 18m/s, announce a warning and land",
+    "expected_tools": [
+      "wind_speed",
+      "land"
+    ]
+  },
+  {
+    "prompt": "if the wind exceeds 15m/s, save the current map and return to base",
+    "expected_tools": [
+      "wind_speed",
+      "map_save",
+      "rtl"
+    ]
+  },
+  {
+    "prompt": "if the wind becomes unsafe, stop the waypoint patrol and return to base",
+    "expected_tools": [
+      "wind_speed",
+      "stop",
+      "rtl"
+    ]
+  },
+  {
+    "prompt": "if the wind exceeds 20m/s, move to 0 0 5 and land",
+    "expected_tools": [
+      "wind_speed",
+      "move",
+      "land"
+    ]
+  },
+  {
+    "prompt": "if the wind is too strong, record a rosbag and return to base",
+    "expected_tools": [
+      "wind_speed",
+      "rosbag_record",
+      "rtl"
+    ]
+  },
+  {
+    "prompt": "if the GPS fix is lost, announce a warning and land",
+    "expected_tools": [
+      "whereami",
+      "land"
+    ]
+  },
+  {
+    "prompt": "if the GPS signal becomes invalid, stop and attempt localization",
+    "expected_tools": [
+      "whereami",
+      "stop",
+      "localize"
+    ]
+  },
+  {
+    "prompt": "if GPS accuracy is poor, record a rosbag and return to base",
+    "expected_tools": [
+      "whereami",
+      "rosbag_record",
+      "rtl"
+    ]
+  },
+  {
+    "prompt": "if a bumper is pressed, stop the robot and announce a collision warning",
+    "expected_tools": [
+      "bumper_status",
+      "stop"
+    ]
+  },
+  {
+    "prompt": "if a bumper is pressed, reverse to -1 0 0 and take a camera snapshot",
+    "expected_tools": [
+      "bumper_status",
+      "move",
+      "camera_snapshot"
+    ]
+  },
+  {
+    "prompt": "if the bumper detects contact, stop and record a rosbag",
+    "expected_tools": [
+      "bumper_status",
+      "stop",
+      "rosbag_record"
+    ]
+  },
+  {
+    "prompt": "if diagnostics detect a critical fault, stop the robot and turn on the warning LED",
+    "expected_tools": [
+      "diagnostics",
+      "stop",
+      "led_control"
+    ]
+  },
+  {
+    "prompt": "if diagnostics report a flight-control fault, announce a warning and land",
+    "expected_tools": [
+      "diagnostics",
+      "land"
+    ]
+  },
+  {
+    "prompt": "if diagnostics detect a recurring fault, record a rosbag and return to base",
+    "expected_tools": [
+      "diagnostics",
+      "rosbag_record",
+      "rtl"
+    ]
+  },
+  {
+    "prompt": "if the IMU becomes unstable, record a rosbag and land",
+    "expected_tools": [
+      "imu_status",
+      "rosbag_record",
+      "land"
+    ]
+  },
+  {
+    "prompt": "if the IMU reports excessive vibration, stop the robot and announce a warning",
+    "expected_tools": [
+      "imu_status",
+      "stop"
+    ]
+  },
+  {
+    "prompt": "if the motor current is too high, stop the robot and run diagnostics",
+    "expected_tools": [
+      "motor_current",
+      "stop",
+      "diagnostics"
+    ]
+  },
+  {
+    "prompt": "if the motor current exceeds the safe limit, announce a warning and record a rosbag",
+    "expected_tools": [
+      "motor_current",
+      "rosbag_record"
+    ]
+  },
+  {
+    "prompt": "if one motor draws excessive current, stop and turn on the warning LED",
+    "expected_tools": [
+      "motor_current",
+      "stop",
+      "led_control"
+    ]
+  },
+  {
+    "prompt": "if the temperature exceeds 80 degrees, stop the robot and announce a warning",
+    "expected_tools": [
+      "temperature_monitor",
+      "stop"
+    ]
+  },
+  {
+    "prompt": "if the flight controller overheats, record a rosbag and land",
+    "expected_tools": [
+      "temperature_monitor",
+      "rosbag_record",
+      "land"
+    ]
+  },
+  {
+    "prompt": "if the system temperature is unsafe, return to base and dock",
+    "expected_tools": [
+      "temperature_monitor",
+      "rtl",
+      "dock"
+    ]
+  },
+  {
+    "prompt": "if communication is lost, record a rosbag and return to base",
+    "expected_tools": [
+      "network_status",
+      "rosbag_record",
+      "rtl"
+    ]
+  },
+  {
+    "prompt": "if network quality falls below the safe level, announce a warning and stop",
+    "expected_tools": [
+      "network_status",
+      "stop"
+    ]
+  },
+  {
+    "prompt": "if the network is stable, start the camera stream and begin waypoint patrol",
+    "expected_tools": [
+      "network_status",
+      "camera_stream",
+      "waypoint_patrol"
+    ]
+  },
+  {
+    "prompt": "if an obstacle is too close, stop the robot and take a camera snapshot",
+    "expected_tools": [
+      "obstacle_monitor",
+      "stop",
+      "camera_snapshot"
+    ]
+  },
+  {
+    "prompt": "if the route is blocked, scan the area and plan a new path",
+    "expected_tools": [
+      "obstacle_monitor",
+      "lidar_scan",
+      "path_plan"
+    ]
+  },
+  {
+    "prompt": "if an obstacle appears during patrol, stop and announce a warning",
+    "expected_tools": [
+      "obstacle_monitor",
+      "stop"
+    ]
+  },
+  {
+    "prompt": "perform a lidar scan, filter the point cloud and detect objects",
+    "expected_tools": [
+      "lidar_scan",
+      "pointcloud_filter",
+      "object_detect"
+    ]
+  },
+  {
+    "prompt": "if the lidar scan detects an obstacle, stop and take a camera snapshot",
+    "expected_tools": [
+      "lidar_scan",
+      "stop",
+      "camera_snapshot"
+    ]
+  },
+  {
+    "prompt": "if the lidar data is noisy, filter the point cloud and record a rosbag",
+    "expected_tools": [
+      "lidar_scan",
+      "pointcloud_filter",
+      "rosbag_record"
+    ]
+  },
+  {
+    "prompt": "if a person is detected, take a camera snapshot and follow the target",
+    "expected_tools": [
+      "object_detect",
+      "camera_snapshot",
+      "follow_target"
+    ]
+  },
+  {
+    "prompt": "if an unknown object is detected, stop and announce a warning",
+    "expected_tools": [
+      "object_detect",
+      "stop"
+    ]
+  },
+  {
+    "prompt": "if a person enters the restricted area, take a snapshot and turn on the warning LED",
+    "expected_tools": [
+      "object_detect",
+      "camera_snapshot",
+      "led_control"
+    ]
+  },
+  {
+    "prompt": "if the costmap shows a blocked route, scan the area and plan a new path",
+    "expected_tools": [
+      "costmap_check",
+      "lidar_scan",
+      "path_plan"
+    ]
+  },
+  {
+    "prompt": "if the robot is inside an occupied costmap cell, stop and announce a warning",
+    "expected_tools": [
+      "costmap_check",
+      "stop"
+    ]
+  },
+  {
+    "prompt": "if SLAM tracking is lost, stop the robot and localize it again",
+    "expected_tools": [
+      "slam_status",
+      "stop",
+      "localize"
+    ]
+  },
+  {
+    "prompt": "if mapping is complete, save the map and return to base",
+    "expected_tools": [
+      "slam_status",
+      "map_save",
+      "rtl"
+    ]
+  },
+  {
+    "prompt": "if SLAM quality decreases, record a rosbag and announce a warning",
+    "expected_tools": [
+      "slam_status",
+      "rosbag_record"
+    ]
+  },
+  {
+    "prompt": "if odometry indicates that the robot is stuck, stop and run diagnostics",
+    "expected_tools": [
+      "odometry",
+      "stop",
+      "diagnostics"
+    ]
+  },
+  {
+    "prompt": "when the robot reaches the waypoint, rotate 90 degrees and take a snapshot",
+    "expected_tools": [
+      "odometry",
+      "rotate",
+      "camera_snapshot"
+    ]
+  },
+  {
+    "prompt": "if odometry drift exceeds the limit, stop and localize the robot",
+    "expected_tools": [
+      "odometry",
+      "stop",
+      "localize"
+    ]
+  },
+  {
+    "prompt": "if the wheel speeds differ excessively, announce a warning and run diagnostics",
+    "expected_tools": [
+      "odometry",
+      "diagnostics"
+    ]
+  },
+  {
+    "prompt": "if one wheel stops moving, announce a warning and record a rosbag",
+    "expected_tools": [
+      "odometry",
+      "rosbag_record"
+    ]
+  },
+  {
+    "prompt": "if the robot exceeds 2m/s, stop and announce a warning",
+    "expected_tools": [
+      "velocity",
+      "stop"
+    ]
+  },
+  {
+    "prompt": "if the velocity remains zero after a movement command, run diagnostics and record a rosbag",
+    "expected_tools": [
+      "velocity",
+      "diagnostics",
+      "rosbag_record"
+    ]
+  },
+  {
+    "prompt": "if the velocity is safe, start line following and monitor obstacles",
+    "expected_tools": [
+      "velocity",
+      "line_follow",
+      "obstacle_monitor"
+    ]
+  },
+  {
+    "prompt": "if the robot is at the delivery point, take a snapshot and release the payload",
+    "expected_tools": [
+      "whereami",
+      "camera_snapshot",
+      "payload_release"
+    ]
+  },
+  {
+    "prompt": "if the robot is outside the geofence, announce a warning and return to base",
+    "expected_tools": [
+      "whereami",
+      "rtl"
+    ]
+  },
+  {
+    "prompt": "if the robot is at the patrol start point, start recording and begin the patrol",
+    "expected_tools": [
+      "whereami",
+      "rosbag_record",
+      "waypoint_patrol"
+    ]
+  },
+  {
+    "prompt": "if the drone is above 100m, descend to 50m and return to base",
+    "expected_tools": [
+      "whereami",
+      "move",
+      "rtl"
+    ]
+  },
+  {
+    "prompt": "explore the environment, save the completed map and return to base",
+    "expected_tools": [
+      "frontier_explore",
+      "map_save",
+      "rtl"
+    ]
+  },
+  {
+    "prompt": "take off, move to 0 0 20 and start the waypoint patrol",
+    "expected_tools": [
+      "takeoff",
+      "move",
+      "waypoint_patrol"
+    ]
+  },
+  {
+    "prompt": "stop the patrol, return to base and land",
+    "expected_tools": [
+      "stop",
+      "rtl",
+      "land"
+    ]
+  },
+  {
+    "prompt": "follow the target, stop when it stops and take a snapshot",
+    "expected_tools": [
+      "follow_target",
+      "stop",
+      "camera_snapshot"
+    ]
+  },
+  {
+    "prompt": "follow the line, stop when the line ends and announce completion",
+    "expected_tools": [
+      "line_follow",
+      "stop"
+    ]
+  },
+  {
+    "prompt": "start waypoint patrol, record a rosbag and return to base when complete",
+    "expected_tools": [
+      "waypoint_patrol",
+      "rosbag_record",
+      "rtl"
+    ]
+  },
+  {
+    "prompt": "look up the map to base_link transform, localize the robot and plan a path",
+    "expected_tools": [
+      "tf_lookup",
+      "localize",
+      "path_plan"
+    ]
+  },
+  {
+    "prompt": "if the transform is unavailable, stop the robot and record a rosbag",
+    "expected_tools": [
+      "tf_lookup",
+      "stop",
+      "rosbag_record"
+    ]
+  }
+]

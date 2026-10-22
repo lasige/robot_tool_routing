@@ -1,0 +1,11 @@
+{
+  "summary": "check navigation costmap, occupancy grid, blocked cells, inflated obstacles, free space around the mobile robot",
+  "description": "Inspects the local or global navigation costmap for obstacles, blocked regions, and free-space status. Command format: 'costmap_check <local|global>' where the scope selects which costmap to inspect. Output may include occupied percentage, nearest blocked cell, inflation radius, and whether the robot footprint is clear. Report blocked areas, clearance, and warnings.",
+  "keywords": [
+    "costmap",
+    "occupancy grid",
+    "blocked cells",
+    "inflated obstacles",
+    "free space"
+  ]
+}

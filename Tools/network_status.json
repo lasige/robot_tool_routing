@@ -1,0 +1,13 @@
+{
+  "summary": "check robot network, Wi-Fi signal, latency, packet loss, connection quality, remote link status",
+  "description": "Reports network health between the operator, robot computer, and key services. Output may include Wi-Fi RSSI, ping latency, packet loss, interface state, and disconnected peers. Does not accept parameters.",
+  "keywords": [
+    "network",
+    "wi-fi",
+    "wifi",
+    "packet loss",
+    "communication",
+    "latency",
+    "connection"
+  ]
+}

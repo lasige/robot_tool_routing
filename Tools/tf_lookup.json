@@ -1,0 +1,14 @@
+{
+  "summary": "look up transform between robot frames, TF tree, coordinate transform, map odom base_link camera lidar",
+  "description": "Looks up the transform between two coordinate frames. Command format: 'tf_lookup <source_frame> <target_frame>'. Output reports translation, rotation, timestamp, and transform availability. Report the transform clearly or explain if the frames are disconnected or stale.",
+  "keywords": [
+    "transform",
+    "tf",
+    "base_link",
+    "map",
+    "odom",
+    "camera",
+    "lidar",
+    "frame"
+  ]
+}

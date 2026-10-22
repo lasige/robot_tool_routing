@@ -1,0 +1,12 @@
+{
+  "summary": "localize the mobile robot; estimate current map pose, x y yaw, AMCL pose, localization confidence, covariance",
+  "description": "Reports the robot's estimated pose in the map frame. Output may include x, y, yaw, covariance, and localization confidence, for example 'pose x=1.23 y=-0.40 yaw=92deg confidence=0.86'. Report the current pose clearly and warn if confidence is low. Does not accept parameters.",
+  "keywords": [
+    "localize",
+    "localise",
+    "localization",
+    "pose",
+    "amcl",
+    "covariance"
+  ]
+}

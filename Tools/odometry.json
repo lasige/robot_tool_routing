@@ -1,0 +1,15 @@
+{
+  "summary": "monitor odometry, wheel encoder pose, robot speed, heading, x y position, velocity, travelled distance",
+  "description": "Streams mobile robot odometry. Output lines include pose, heading, linear velocity, angular velocity, or travelled distance, for example 'odom x=2.14 y=0.35 yaw=45deg v=0.20m/s w=0.05rad/s'. Runs continuously until killed by the boss.",
+  "keywords": [
+    "odometry",
+    "wheel speed",
+    "wheel speeds",
+    "encoder",
+    "wheel",
+    "reaches",
+    "pose",
+    "heading",
+    "travelled distance"
+  ]
+}

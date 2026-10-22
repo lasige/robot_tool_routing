@@ -1,0 +1,12 @@
+{
+  "summary": "follow a line, tape, lane marking, painted path, visual guide, floor track with the mobile robot",
+  "description": "Commands the robot to follow a visible line or floor marking for a bounded duration. Command format: 'line_follow <duration_s>' where duration_s limits the behavior. Output reports line detection quality, lateral error, speed, line lost, timeout, and completion. Report when line following starts, if the line is lost, and final result.",
+  "keywords": [
+    "line follow",
+    "follow the line",
+    "line",
+    "tape",
+    "lane marking",
+    "floor track"
+  ]
+}

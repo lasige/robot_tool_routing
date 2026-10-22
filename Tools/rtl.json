@@ -1,0 +1,11 @@
+{
+  "summary": "return to launch — return to the origin point and land automatically",
+  "description": "Commands the drone to return to its launch point and land automatically. The flight controller navigates back to the GPS coordinates recorded at takeoff, then descends and lands. Output confirms when RTL is initiated and when the drone has landed. Report when the drone is back and landed, or if an error occurs. Does not accept parameters.",
+  "keywords": [
+    "return to base",
+    "return to launch",
+    "rtl",
+    "go home",
+    "origin"
+  ]
+}

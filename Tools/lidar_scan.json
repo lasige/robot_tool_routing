@@ -1,0 +1,11 @@
+{
+  "summary": "read lidar or laser scan ranges; measure nearby walls, obstacles, free space, closest distance around the mobile robot",
+  "description": "Reads current lidar or laser scan measurements. Output reports closest obstacle distance and directional ranges, for example 'front=2.4m left=1.1m right=3.8m rear=0.9m min=0.7m'. Extract the closest obstacle, useful directional distances, and whether the robot has clear space. Does not accept parameters.",
+  "keywords": [
+    "lidar",
+    "laser",
+    "scan",
+    "range",
+    "closest distance"
+  ]
+}

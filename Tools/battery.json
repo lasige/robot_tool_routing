@@ -1,0 +1,11 @@
+{
+  "summary": "monitor battery level, charge, or power in real time; reports current battery percentage and triggers alerts when charge is low",
+  "description": "Monitors the drone battery continuously. Output lines report the current charge percentage (e.g. 'Battery: 87%'). Runs indefinitely until killed by the boss. Does not accept parameters.",
+  "keywords": [
+    "battery",
+    "charge",
+    "power",
+    "low charge",
+    "battery percentage"
+  ]
+}

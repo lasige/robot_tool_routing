@@ -1,0 +1,10 @@
+{
+  "summary": "save the current map, SLAM map, occupancy grid, navigation map, mapping result, floor plan",
+  "description": "Saves the current map from SLAM or navigation. Command format: 'map_save <name>' where name is an optional short map name. Output confirms the map files written, for example 'saved map: maps/lab.yaml maps/lab.pgm'. Report the map name, saved paths, and any failure.",
+  "keywords": [
+    "save map",
+    "map save",
+    "slam map",
+    "floor plan"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "summary": "process point cloud data, filter lidar points, remove ground plane, detect clusters, 3D obstacle processing",
+  "description": "Processes the latest 3D point cloud from lidar or depth camera. Command format: 'pointcloud_filter <mode>' where mode can be 'ground', 'clusters', 'obstacles', or 'downsample'. Output reports point counts, detected clusters, heights, and processing warnings. Report the key measurements for the chosen mode.",
+  "keywords": [
+    "point cloud",
+    "pointcloud",
+    "filter",
+    "clusters",
+    "ground plane",
+    "3d obstacle"
+  ]
+}

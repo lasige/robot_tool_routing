@@ -1,0 +1,248 @@
+[
+  {
+    "prompt": "what is the wind speed?",
+    "expected_tools": [
+      "wind_speed"
+    ]
+  },
+  {
+    "prompt": "tell me the robot battery level",
+    "expected_tools": [
+      "battery"
+    ]
+  },
+  {
+    "prompt": "where is the drone right now?",
+    "expected_tools": [
+      "whereami"
+    ]
+  },
+  {
+    "prompt": "check the robot navigation costmap",
+    "expected_tools": [
+      "costmap_check"
+    ]
+  },
+  {
+    "prompt": "check the robot bumper sensors",
+    "expected_tools": [
+      "bumper_status"
+    ]
+  },
+  {
+    "prompt": "take a robot camera snapshot",
+    "expected_tools": [
+      "camera_snapshot"
+    ]
+  },
+  {
+    "prompt": "start the robot camera stream",
+    "expected_tools": [
+      "camera_stream"
+    ]
+  },
+  {
+    "prompt": "show the robot system diagnostics",
+    "expected_tools": [
+      "diagnostics"
+    ]
+  },
+  {
+    "prompt": "dock the robot",
+    "expected_tools": [
+      "dock"
+    ]
+  },
+  {
+    "prompt": "make the robot follow the target",
+    "expected_tools": [
+      "follow_target"
+    ]
+  },
+  {
+    "prompt": "start robot frontier exploration",
+    "expected_tools": [
+      "frontier_explore"
+    ]
+  },
+  {
+    "prompt": "set the robot geofence",
+    "expected_tools": [
+      "geofence_set"
+    ]
+  },
+  {
+    "prompt": "close the robot gripper",
+    "expected_tools": [
+      "payload_grab"
+    ]
+  },
+  {
+    "prompt": "check the robot IMU status",
+    "expected_tools": [
+      "imu_status"
+    ]
+  },
+  {
+    "prompt": "land the drone",
+    "expected_tools": [
+      "land"
+    ]
+  },
+  {
+    "prompt": "scan the robot area with the lidar",
+    "expected_tools": [
+      "lidar_scan"
+    ]
+  },
+  {
+    "prompt": "start robot line following",
+    "expected_tools": [
+      "line_follow"
+    ]
+  },
+  {
+    "prompt": "localize the robot",
+    "expected_tools": [
+      "localize"
+    ]
+  },
+  {
+    "prompt": "load the robot map",
+    "expected_tools": [
+      "map_load"
+    ]
+  },
+  {
+    "prompt": "save the current robot map",
+    "expected_tools": [
+      "map_save"
+    ]
+  },
+  {
+    "prompt": "check the robot motor current",
+    "expected_tools": [
+      "motor_current"
+    ]
+  },
+  {
+    "prompt": "move the drone to coordinates 5 10 2",
+    "expected_tools": [
+      "move"
+    ]
+  },
+  {
+    "prompt": "check the robot network status",
+    "expected_tools": [
+      "network_status"
+    ]
+  },
+  {
+    "prompt": "show the robot current odometry",
+    "expected_tools": [
+      "odometry"
+    ]
+  },
+  {
+    "prompt": "detect objects in front of the robot",
+    "expected_tools": [
+      "object_detect"
+    ]
+  },
+  {
+    "prompt": "start robot obstacle monitoring",
+    "expected_tools": [
+      "obstacle_monitor"
+    ]
+  },
+  {
+    "prompt": "plan a robot path to the destination",
+    "expected_tools": [
+      "path_plan"
+    ]
+  },
+  {
+    "prompt": "release the drone payload",
+    "expected_tools": [
+      "payload_release"
+    ]
+  },
+  {
+    "prompt": "filter the robot point cloud",
+    "expected_tools": [
+      "pointcloud_filter"
+    ]
+  },
+  {
+    "prompt": "start recording a robot rosbag",
+    "expected_tools": [
+      "rosbag_record"
+    ]
+  },
+  {
+    "prompt": "rotate the robot 90 degrees clockwise",
+    "expected_tools": [
+      "rotate"
+    ]
+  },
+  {
+    "prompt": "return the drone to base",
+    "expected_tools": [
+      "rtl"
+    ]
+  },
+  {
+    "prompt": "check the robot SLAM status",
+    "expected_tools": [
+      "slam_status"
+    ]
+  },
+  {
+    "prompt": "stop the robot",
+    "expected_tools": [
+      "stop"
+    ]
+  },
+  {
+    "prompt": "take off the drone",
+    "expected_tools": [
+      "takeoff"
+    ]
+  },
+  {
+    "prompt": "check the robot system temperature",
+    "expected_tools": [
+      "temperature_monitor"
+    ]
+  },
+  {
+    "prompt": "look up the robot transform between map and base_link",
+    "expected_tools": [
+      "tf_lookup"
+    ]
+  },
+  {
+    "prompt": "undock the robot",
+    "expected_tools": [
+      "undock"
+    ]
+  },
+  {
+    "prompt": "show the robot current velocity",
+    "expected_tools": [
+      "velocity"
+    ]
+  },
+  {
+    "prompt": "start the robot waypoint patrol",
+    "expected_tools": [
+      "waypoint_patrol"
+    ]
+  },
+  {
+    "prompt": "turn the robot status LED on",
+    "expected_tools": [
+      "led_control"
+    ]
+  }
+]

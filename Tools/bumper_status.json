@@ -1,0 +1,11 @@
+{
+  "summary": "check bumper sensors, contact switches, collision contact, front rear bumper pressed, physical touch status",
+  "description": "Reports physical bumper or contact sensor state. Output may include front, rear, left, and right bumper states, for example 'front=false rear=false left=true right=false'. Does not accept parameters.",
+  "keywords": [
+    "bumper",
+    "contact",
+    "pressed",
+    "touch",
+    "collision"
+  ]
+}

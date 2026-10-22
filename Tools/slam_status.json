@@ -1,0 +1,11 @@
+{
+  "summary": "check SLAM status, mapping quality, loop closure, tracked features, map updates, localization drift",
+  "description": "Reports SLAM or mapping system status. Output may include tracking state, map update rate, loop closures, feature count, pose graph size, and drift warnings. Does not accept parameters.",
+  "keywords": [
+    "slam",
+    "mapping",
+    "loop closure",
+    "map updates",
+    "localization drift"
+  ]
+}

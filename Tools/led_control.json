@@ -1,0 +1,11 @@
+{
+  "summary": "set robot LED lights, status light, color indicator, blink pattern, visual signal",
+  "description": "Sets robot LED color and blink mode. Command format: 'led_control <color> <solid|blink|off>' where color is a simple color name such as red, green, blue, yellow, white, or off. Output confirms the active LED state or reports unsupported color or pattern. Report the configured light state.",
+  "keywords": [
+    "led",
+    "light",
+    "status light",
+    "blink",
+    "color"
+  ]
+}

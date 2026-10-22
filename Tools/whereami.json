@@ -1,0 +1,15 @@
+{
+  "summary": "get the drone's current position, altitude, height, and coordinates in real time; monitor GPS fix status, GPS signal quality, GPS accuracy and availability; use this to check where the drone is, how high it is flying, whether GPS is valid or lost, and its GPS location",
+  "description": "Reports the drone's current position and GPS status in real time. Output lines include GPS coordinates, altitude above sea level, height above ground, GPS fix status, signal quality and accuracy (e.g. 'lat=41.178 lon=-8.595 alt=12.4m height=5.1m fix=3D accuracy=1.2m'). Use this tool when the prompt references GPS fix lost, GPS signal invalid or poor, GPS accuracy, or the robot's current location, altitude, or coordinates. Does not accept parameters — runs continuously until killed.",
+  "keywords": [
+    "where",
+    "position",
+    "altitude",
+    "height",
+    "gps",
+    "gnss",
+    "satellite",
+    "coordinates",
+    "location"
+  ]
+}

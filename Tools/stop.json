@@ -1,0 +1,12 @@
+{
+  "summary": "stop the robot, emergency stop, halt motion, brake, cancel movement, hold position immediately",
+  "description": "Stops the robot or drone immediately by sending a zero-motion or halt command. Output confirms when motion has been stopped, for example 'stop command sent' or 'robot halted'. Report confirmation immediately or report any failure. Does not accept parameters.",
+  "keywords": [
+    "stop",
+    "halt",
+    "emergency",
+    "brake",
+    "cancel movement",
+    "hold position"
+  ]
+}

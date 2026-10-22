@@ -1,0 +1,9 @@
+{
+  "summary": "monitor wind speed in real time (stdout lines in m/s)",
+  "description": "Monitors wind speed continuously via a remote sensor. Output lines report wind speed in metres per second (e.g. 'wind_speed: 3.2 m/s'). Does not accept parameters — runs indefinitely until killed.",
+  "keywords": [
+    "wind",
+    "wind speed",
+    "m/s"
+  ]
+}

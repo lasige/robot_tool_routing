@@ -1,0 +1,14 @@
+{
+  "summary": "read IMU orientation, acceleration, gyro, roll pitch yaw, angular velocity, robot attitude, sensor health",
+  "description": "Reports inertial measurement unit data and health. Output may include roll, pitch, yaw, acceleration, angular velocity, calibration, and temperature. Does not accept parameters.",
+  "keywords": [
+    "imu",
+    "vibration",
+    "attitude",
+    "orientation",
+    "roll",
+    "pitch",
+    "yaw",
+    "gyro"
+  ]
+}

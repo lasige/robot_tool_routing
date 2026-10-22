@@ -1,0 +1,10 @@
+{
+  "summary": "undock the mobile robot, leave charger, back away from docking station, disconnect from charge base",
+  "description": "Commands the robot to safely leave its charger or docking station. Output confirms charger disconnect, reverse motion, final clearance, and whether the robot is ready to navigate. Report when undocking starts, completes, or fails. Does not accept parameters.",
+  "keywords": [
+    "undock",
+    "leave charger",
+    "docking station",
+    "disconnect"
+  ]
+}

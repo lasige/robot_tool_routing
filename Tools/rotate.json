@@ -1,0 +1,12 @@
+{
+  "summary": "rotate, turn, yaw, spin the robot or drone by an angle in degrees; face left, face right, turn around",
+  "description": "Rotates the robot or drone by a requested relative yaw angle. Command format: 'rotate <degrees>' where positive degrees turn left/counterclockwise and negative degrees turn right/clockwise. Output confirms rotation start, current yaw if available, and completion. Report when rotation starts, completes, or fails.",
+  "keywords": [
+    "rotate",
+    "turn left",
+    "turn right",
+    "turn around",
+    "yaw",
+    "spin"
+  ]
+}

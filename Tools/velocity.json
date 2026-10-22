@@ -1,0 +1,13 @@
+{
+  "summary": "drive with velocity command; set linear speed and angular speed for mobile robot, cmd_vel, move forward, arc turn",
+  "description": "Commands a mobile robot velocity for a bounded duration. Command format: 'velocity <linear_mps> <angular_radps> <duration_s>'. Linear speed is metres per second; angular speed is radians per second. Output confirms command start, active duration, and stop. Report when the velocity command starts, ends, or fails.",
+  "keywords": [
+    "velocity",
+    "2m/s",
+    "linear speed",
+    "angular speed",
+    "cmd_vel",
+    "move forward",
+    "arc turn"
+  ]
+}

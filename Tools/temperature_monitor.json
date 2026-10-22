@@ -1,0 +1,12 @@
+{
+  "summary": "monitor robot temperature, CPU heat, motor temperature, battery temperature, thermal warning, overheating",
+  "description": "Continuously monitors thermal readings from the robot computer, motors, battery, or sensors. Output may include component temperatures and warning levels, for example 'cpu=62C battery=31C left_motor=45C'. Runs until killed by the boss.",
+  "keywords": [
+    "temperature",
+    "overheat",
+    "thermal",
+    "cpu heat",
+    "motor temperature",
+    "battery temperature"
+  ]
+}

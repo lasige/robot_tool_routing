@@ -1,0 +1,13 @@
+{
+  "llm": {
+    "routing_model": "gpt-oss:120b-cloud",
+    "ollama_url": "http://127.0.0.1:11434/v1/chat/completions",
+    "embedding_model": "mxbai-embed-large",
+    "ollama_embed_url": "http://127.0.0.1:11434/api/embeddings"
+  },
+  "routing": {
+    "distance_threshold": 0.325,
+    "chromadb_n_results": null,
+    "scripts_dir": "Tools"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "summary": "set geofence, virtual boundary, safety zone, keep robot inside area, navigation limits",
+  "description": "Configures a rectangular navigation geofence in the map frame. Command format: 'geofence_set <xmin> <ymin> <xmax> <ymax>' where values are metres. Output confirms the active boundary or reports invalid geometry. Report the configured area and any rejection. This changes robot safety constraints and should be confirmed before launch.",
+  "keywords": [
+    "geofence",
+    "boundary",
+    "safety zone",
+    "navigation limits"
+  ]
+}

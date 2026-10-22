@@ -1,0 +1,10 @@
+{
+  "summary": "dock the mobile robot, go to charger, connect to charging station, auto dock, return to dock",
+  "description": "Commands the mobile robot to navigate to and align with a charger or docking station. Command format: 'dock <station>' where station is a named dock or 'default'. Output confirms approach, alignment, contact, charging state, or failure. Report when docking starts, when the robot is docked, and whether charging is active.",
+  "keywords": [
+    "dock",
+    "charger",
+    "charging station",
+    "auto dock"
+  ]
+}

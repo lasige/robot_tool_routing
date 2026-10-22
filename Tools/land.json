@@ -1,0 +1,10 @@
+{
+  "summary": "land the drone — bring it down to the ground in a controlled manner; touch down, descend, end the flight, or set the drone down",
+  "description": "Commands the drone to land at its current position. Output confirms when the landing sequence starts and when the drone has touched down (e.g. 'Landing initiated', 'Landed successfully'). Report when landing is confirmed or if an error occurs. Does not accept parameters.",
+  "keywords": [
+    "land",
+    "touch down",
+    "descend",
+    "set down"
+  ]
+}

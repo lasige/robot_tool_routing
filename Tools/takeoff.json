@@ -1,0 +1,10 @@
+{
+  "summary": "take off the drone and start flying",
+  "description": "Commands the drone to take off from the ground. The flight controller arms the motors and lifts to a default altitude configured on the drone. Output confirms when takeoff is initiated and when the drone is airborne. Report when the drone is airborne or if an error occurs. Does not accept parameters.",
+  "keywords": [
+    "take off",
+    "takeoff",
+    "launch",
+    "start flying"
+  ]
+}

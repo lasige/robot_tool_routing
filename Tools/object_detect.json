@@ -1,0 +1,14 @@
+{
+  "summary": "detect objects with the camera, find people, cones, doors, markers, boxes, labels, visual perception",
+  "description": "Runs object detection on the current camera stream or a single frame. Command format: 'object_detect <label>' where label is an optional target class or 'all'. Output may include object labels, confidence scores, bounding boxes, and counts. Report detected target objects, confidence, and location in the image if available.",
+  "keywords": [
+    "detect objects",
+    "object",
+    "person",
+    "camera",
+    "cones",
+    "doors",
+    "markers",
+    "labels"
+  ]
+}

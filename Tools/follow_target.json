@@ -1,0 +1,12 @@
+{
+  "summary": "follow a person, tag, marker, target, robot, or object with the mobile robot while keeping distance",
+  "description": "Commands the robot to follow a detected target while maintaining a requested standoff distance. Command format: 'follow_target <target> <distance_m>' where target is a label such as person, marker, robot, or cone. Output reports target acquisition, tracking quality, distance, lost target, and follow stop conditions. Report when following starts, if the target is lost, and final status.",
+  "keywords": [
+    "follow",
+    "target",
+    "person",
+    "object",
+    "marker",
+    "tag"
+  ]
+}

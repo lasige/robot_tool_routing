@@ -1,0 +1,11 @@
+{
+  "summary": "patrol waypoints, visit multiple places, route through checkpoints, inspection route, repeated navigation mission",
+  "description": "Commands the mobile robot to visit a list of waypoints in order. Command format: 'waypoint_patrol <wp1,wp2,...>' where each waypoint is a named waypoint or coordinate token accepted by the robot runtime. Output reports waypoint start, arrival, skipped waypoints, loop completion, or failure. Report progress at each waypoint and the final patrol result.",
+  "keywords": [
+    "waypoint",
+    "patrol",
+    "checkpoints",
+    "inspection route",
+    "repeated navigation"
+  ]
+}

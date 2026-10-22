@@ -1,0 +1,11 @@
+{
+  "summary": "release payload, drop package, deploy item, open payload bay, cargo mechanism, delivery action",
+  "description": "Commands a payload release mechanism. Command format: 'payload_release <payload>' where payload is a named bay, slot, or 'default'. Output confirms arming, release, latch state, and any safety interlock. Report release start, success, or failure. This is an irreversible physical action and requires confirmation.",
+  "keywords": [
+    "payload",
+    "release",
+    "delivery",
+    "drop package",
+    "cargo"
+  ]
+}

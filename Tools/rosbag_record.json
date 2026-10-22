@@ -1,0 +1,12 @@
+{
+  "summary": "record robot data, rosbag, log topics, save sensor data, capture telemetry for debugging or experiment",
+  "description": "Records selected robot topics or all common telemetry to a bag file. Command format: 'rosbag_record <name> <duration_s>' where name identifies the recording and duration_s bounds recording time. Output reports file path, topics, bytes written, dropped messages, and completion. Report the saved bag path and recording health.",
+  "keywords": [
+    "rosbag",
+    "record",
+    "log",
+    "topics",
+    "telemetry",
+    "debugging"
+  ]
+}

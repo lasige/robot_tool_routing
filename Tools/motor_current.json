@@ -1,0 +1,12 @@
+{
+  "summary": "monitor motor current, drivetrain load, actuator amps, high current, stall detection, power draw",
+  "description": "Streams motor current and drivetrain load measurements. Output may include per-motor current, average current, peak current, and stall flags, for example 'left=1.2A right=1.4A peak=2.0A stall=false'. Runs continuously until killed by the boss.",
+  "keywords": [
+    "motor current",
+    "overload",
+    "amps",
+    "current",
+    "stall",
+    "power draw"
+  ]
+}

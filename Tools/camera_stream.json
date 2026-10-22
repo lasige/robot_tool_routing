@@ -1,0 +1,11 @@
+{
+  "summary": "check camera stream, video feed, frame rate, image topic, camera health, dropped frames",
+  "description": "Monitors a robot camera stream and reports frame metadata. Command format: 'camera_stream <camera>' where camera is a camera name or 'default'. Output may include frame rate, resolution, timestamp age, dropped frames, and stream status.",
+  "keywords": [
+    "camera stream",
+    "video",
+    "stream",
+    "video feed",
+    "frame rate"
+  ]
+}

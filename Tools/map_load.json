@@ -1,0 +1,10 @@
+{
+  "summary": "load a saved map, switch navigation map, use stored occupancy grid, restore map for localization",
+  "description": "Loads a saved map for localization or navigation. Command format: 'map_load <name>' where name is the saved map identifier. Output confirms map metadata, resolution, origin, and whether the map server accepted it. Report the loaded map and any failure. This can affect navigation, so confirmation is required.",
+  "keywords": [
+    "load map",
+    "map load",
+    "saved map",
+    "restore map"
+  ]
+}

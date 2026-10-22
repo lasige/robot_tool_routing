@@ -1,0 +1,11 @@
+{
+  "summary": "capture a camera image, take a photo, snapshot, frame grab, inspect what the mobile robot or drone sees",
+  "description": "Captures one image from the robot camera and prints the saved image path plus basic frame metadata. Output may include lines such as 'snapshot saved: /tmp/camera_001.jpg width=1280 height=720'. Report the saved path, timestamp, camera name if present, and any obvious error such as no camera feed. Does not accept parameters.",
+  "keywords": [
+    "snapshot",
+    "photo",
+    "image",
+    "picture",
+    "frame grab"
+  ]
+}

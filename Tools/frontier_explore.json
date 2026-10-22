@@ -1,0 +1,11 @@
+{
+  "summary": "autonomously explore unknown space, frontier exploration, build map, visit unmapped areas, exploration mission",
+  "description": "Starts autonomous frontier exploration for mapping unknown space. Command format: 'frontier_explore <duration_s>' where duration_s bounds the exploration time. Output reports selected frontiers, navigation progress, newly mapped area, timeout, and completion. Report exploration start, major progress, safety issues, and final mapped-area summary.",
+  "keywords": [
+    "frontier",
+    "explore",
+    "exploration",
+    "unknown space",
+    "unmapped"
+  ]
+}

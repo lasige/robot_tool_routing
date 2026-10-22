@@ -1,0 +1,13 @@
+{
+  "summary": "monitor obstacles and collision risk; warn when something is too close to the robot, safety distance, proximity alert",
+  "description": "Continuously monitors proximity sensors or lidar for obstacles inside a safety threshold. Command format: 'obstacle_monitor <distance_m>' where distance_m is the minimum allowed clearance in metres. Output lines may include 'clear min=1.8m' or 'obstacle front=0.42m'.",
+  "keywords": [
+    "obstacle",
+    "collision",
+    "too close",
+    "blocked",
+    "route",
+    "proximity",
+    "safety distance"
+  ]
+}
